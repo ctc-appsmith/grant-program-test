@@ -11,7 +11,6 @@ export default {
             .catch(error => {
                 console.error('Sign-in failed:', error);
                 // Handle error and provide feedback to the user
-                console.log('Sign-in failed. Please check your credentials.');
             });
     },
 }

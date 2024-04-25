@@ -25,21 +25,7 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Login Page_authentication.signIn",
-              "name": "authentication.signIn",
-              "collectionId": "Login Page_authentication",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  return sign_in.run().then(data => {\n    delete data.user;\n    Object.keys(data).forEach(i => {\n      sessionStorage.setItem(i, data[i]);\n    });\n    navigateTo('AdminPage');\n  }).catch(error => {\n    console.error('Sign-in failed:', error);\n    console.log('Sign-in failed. Please check your credentials.');\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Login Page",
