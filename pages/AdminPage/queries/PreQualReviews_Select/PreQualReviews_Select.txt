@@ -1,0 +1,4 @@
+SELECT preQualReviews.reviewID, preQualReviews.applicantID, preQualReviews.assignedTo, preQualReviews.reviewType, preQualReviews.reviewStatus, preQualReviews.reviewNotes, preQualReviews.created, preQualReviews.lastChanged, preQualReviews.lastChangedBy
+FROM preQualReviews
+
+WHERE preQualReviews.applicantID = {{data_table.selectedRow.applicantID}};

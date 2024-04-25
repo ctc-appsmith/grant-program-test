@@ -1,0 +1,6 @@
+SELECT Reviews.assignedTo, ReviewTypes.reviewType, Reviews.reviewStatus, Reviews.appID, Reviews.reviewID, Reviews.reviewNotes
+FROM Reviews INNER JOIN ReviewTypes ON Reviews.reviewType = ReviewTypes.requiredReviewID
+WHERE (((Reviews.appID)={{data_table.selectedRow.appID}}))
+ORDER BY Reviews.reviewID;
+
+

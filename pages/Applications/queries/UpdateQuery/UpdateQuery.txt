@@ -1,0 +1,7 @@
+UPDATE Applications SET
+		applicationName = '{{update_form.fieldState.applicationName.isVisible ? update_form.formData.applicationName : update_form.sourceData.applicationName}}',
+    applicantID = '{{update_form.fieldState.applicantID.isVisible ? update_form.formData.applicantID : update_form.sourceData.applicantID}}',
+		type = '{{update_form.fieldState.type.isVisible ? update_form.formData.type : update_form.sourceData.type}}',
+	  applicationStatus = '{{update_form.fieldState.appStatusType.isVisible ? update_form.formData.appStatusType : update_form.sourceData.appStatusType}}',
+		lastChangedBy = '{{get_user.data.email}}'
+WHERE appID = {{data_table.selectedRow.appID}};

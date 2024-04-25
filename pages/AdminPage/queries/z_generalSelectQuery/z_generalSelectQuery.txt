@@ -1,0 +1,3 @@
+SELECT AppDetailItems.appDetail, appDetails.detailInput, appDetails.created, appDetails.lastChanged, appDetails.lastChangedBy, appDetails.appDetailsID, appDetails.appDetailItemID
+FROM appDetails INNER JOIN AppDetailItems ON appDetails.appDetailItemID = AppDetailItems.AppDetailItemID
+WHERE appID = {{data_table.selectedRow.appID}};

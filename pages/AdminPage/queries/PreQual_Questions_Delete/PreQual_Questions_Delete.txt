@@ -1,0 +1,2 @@
+DELETE FROM PreQualQuestions
+  WHERE preQualQuestionID = {{prequalQuest_table.triggeredRow.preQualQuestionID}};

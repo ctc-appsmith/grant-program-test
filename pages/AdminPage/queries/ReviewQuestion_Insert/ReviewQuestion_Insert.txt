@@ -1,0 +1,22 @@
+INSERT INTO ReviewQuestions (
+	apptype,
+	reviewType,
+	question,
+	tip,
+	notes,
+	whereFound,
+	datatype,
+	active,
+	lastChangedBy
+)
+VALUES (
+	'{{insertReviewQuestion_form.formData.apptype}}',
+	'{{insertReviewQuestion_form.formData.reviewType}}',
+	'{{insertReviewQuestion_form.formData.question}}',
+	'{{insertReviewQuestion_form.formData.tip}}',
+	'{{insertReviewQuestion_form.formData.notes}}',
+	'{{insertReviewQuestion_form.formData.whereFound}}',
+	'{{insertReviewQuestion_form.formData.datatype}}',
+	'{{insertReviewQuestion_form.formData.active}}',
+	'{{get_user.data.email}}'
+);

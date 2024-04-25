@@ -1,0 +1,3 @@
+SELECT Applications.appID, Applications.applicationName, Clients.clientName, Applicant.ApplicantName, Applications.type, Applications.created, Applications.lastChanged, Applications.lastChangedBy, Clients.clientID, Applications.applicantID, applicationTypes.appType, applicationStatusTypes.appStatusType
+FROM (((Applications INNER JOIN Clients ON Applications.clientID = Clients.clientID) LEFT JOIN Applicant ON Applications.applicantID = Applicant.applicantID) LEFT JOIN applicationTypes ON Applications.type = applicationTypes.appTypeID) LEFT JOIN applicationStatusTypes ON Applications.applicationStatus = applicationStatusTypes.appStatusID;
+

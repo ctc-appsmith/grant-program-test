@@ -1,0 +1,7 @@
+SELECT ReviewQuestions.question, Reviews.assignedTo, ReviewQuestions.reviewType, ReviewAnswers.answer, ReviewAnswers.notes, ReviewAnswers.answerID, ReviewAnswers.reviewID
+FROM Reviews INNER JOIN (ReviewQuestions INNER JOIN ReviewAnswers ON ReviewQuestions.questionID = ReviewAnswers.questionID) ON Reviews.reviewID = ReviewAnswers.reviewID
+
+WHERE ReviewAnswers.reviewID = {{myReview_table.selectedRow.reviewID}}
+
+ORDER BY reviewID
+;

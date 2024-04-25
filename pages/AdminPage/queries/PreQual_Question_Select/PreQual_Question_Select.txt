@@ -1,0 +1,4 @@
+SELECT * FROM PreQualQuestions
+
+ORDER BY {{prequalQuest_table.sortOrder.column || 'preQualQuestionID'}} {{prequalQuest_table.sortOrder.order || "ASC"}}
+;

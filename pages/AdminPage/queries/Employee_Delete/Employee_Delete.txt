@@ -1,0 +1,2 @@
+DELETE FROM Employees
+  WHERE empID = {{emp_table.triggeredRow.empID}};

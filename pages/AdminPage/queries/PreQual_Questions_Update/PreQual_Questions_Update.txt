@@ -1,0 +1,5 @@
+UPDATE PreQualQuestions SET
+    field = '{{updatePrequalQ_form.fieldState.field.isVisible ? updatePrequalQ_form.formData.field : updatePrequalQ_form.sourceData.field}}',
+		notes = '{{updatePrequalQ_form.fieldState.notes.isVisible ? updatePrequalQ_form.formData.notes : updatePrequalQ_form.sourceData.notes}}',
+		lastChangedBy = '{{get_user.data.email}}'
+  WHERE preQualQuestionID = {{prequalQuest_table.selectedRow.preQualQuestionID}};

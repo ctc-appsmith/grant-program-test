@@ -1,0 +1,4 @@
+SELECT * FROM Employees
+WHERE empFirstName like '%{{emp_table.searchText || ""}}%'
+ORDER BY {{emp_table.sortOrder.column || 'empID'}} {{emp_table.sortOrder.order || "ASC"}}
+;

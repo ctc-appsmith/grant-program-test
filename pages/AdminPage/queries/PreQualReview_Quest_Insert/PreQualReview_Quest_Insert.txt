@@ -1,0 +1,16 @@
+INSERT INTO preQualReviewQuestions (
+	reviewType,
+	question,
+	tip,
+	notes,
+	lastChangedBy
+)
+VALUES (
+	'{{insertPrequalRevQ_form.formData.reviewType}}',
+	'{{insertPrequalRevQ_form.formData.question}}',
+	'{{insertPrequalRevQ_form.formData.tip}}',
+	'{{insertPrequalRevQ_form.formData.notes}}',
+	'{{insertPrequalRevQ_form.formData.dataType}}',
+	'{{insertPrequalRevQ_form.formData.isActive}}',
+	'{{get_user.data.email}}'
+);

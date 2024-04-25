@@ -1,0 +1,2 @@
+DELETE FROM ReviewAnswers
+  WHERE answerID = {{data_table.triggeredRow.answerID}};

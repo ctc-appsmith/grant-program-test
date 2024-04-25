@@ -1,0 +1,5 @@
+UPDATE applicationStatusTypes SET
+		appStatusType = '{{JSONForm1.fieldState.appStatusType.isVisible ? JSONForm1.formData.appStatusType : JSONForm1.sourceData.appStatusType}}',
+			statusDefinition = '{{JSONForm1.fieldState.statusDefinition.isVisible ? JSONForm1.formData.statusDefinition : JSONForm1.sourceData.statusDefinition}}',
+		lastUpdatedBy = '{{get_user.data.email}}'
+WHERE appStatusID = {{AppStatus_tableCopy.selectedRow.appStatusID}};

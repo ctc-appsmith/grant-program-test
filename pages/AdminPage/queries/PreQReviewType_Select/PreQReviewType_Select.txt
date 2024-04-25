@@ -1,0 +1,3 @@
+SELECT * FROM preQualReviewTypes
+
+ORDER BY preQualReviewTypes.reviewOrder;

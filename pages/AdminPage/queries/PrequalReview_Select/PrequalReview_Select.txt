@@ -1,0 +1,4 @@
+SELECT * FROM preQualReviews
+WHERE reviewType like '%prequal%'
+ORDER BY {{PrequalRev_table.sortOrder.column || 'reviewID'}} {{PrequalRev_table.sortOrder.order || "ASC"}}
+;

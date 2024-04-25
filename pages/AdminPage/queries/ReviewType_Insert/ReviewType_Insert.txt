@@ -1,0 +1,10 @@
+INSERT INTO ReviewTypes (
+	appType,
+	reviewType,
+	notes,
+	lastChangedBy)
+VALUES (
+	'{{insertRevType_form.formData.appType}}',
+	'{{insertRevType_form.formData.reviewType}}',
+	'{{insertRevType_form.formData.notes}}',
+	'{{get_user.data.email}}');

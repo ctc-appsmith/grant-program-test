@@ -1,0 +1,16 @@
+
+with subquery as(
+	
+SELECT ReviewAnswers.answer, ReviewAnswers.appID
+FROM ReviewAnswers
+WHERE (isnull(ReviewAnswers.answer) OR ReviewAnswers.answer = "NO") AND ReviewAnswers.appID= {{data_table.selectedRow.appID}}
+	)
+	
+SELECT subquery.appID, subquery.answer
+FROM subquery;
+
+
+
+
+
+

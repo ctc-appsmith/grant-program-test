@@ -1,0 +1,221 @@
+{
+  "unpublishedPage": {
+    "name": "AdminPage",
+    "slug": "adminpage",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1174,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 880,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 87,
+          "minHeight": 890,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "AdminPage_Client_Select",
+              "name": "Client_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "data_table.sortOrder.order || \"ASC\"",
+                "data_table.sortOrder.column || 'clientID'",
+                "data_table.pageSize",
+                "data_table.searchText || \"\"",
+                "(data_table.pageNo - 1) * data_table.pageSize"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "AdminPage_AppQuestion_Select",
+              "name": "AppQuestion_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appQuestion_table.sortOrder.column || 'AppDetailItemID'",
+                "appQuestion_table.searchText || \"\"",
+                "appQuestion_table.sortOrder.order || \"ASC\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_AppStatusType_Select",
+              "name": "AppStatusType_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_Employee_Select",
+              "name": "Employee_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "emp_table.sortOrder.order || \"ASC\"",
+                "emp_table.sortOrder.column || 'empID'",
+                "emp_table.searchText || \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_PreQReviewType_Select",
+              "name": "PreQReviewType_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_PreQualReview_Quest_Select",
+              "name": "PreQualReview_Quest_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_PreQual_Question_Select",
+              "name": "PreQual_Question_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "prequalQuest_table.sortOrder.column || 'preQualQuestionID'",
+                "prequalQuest_table.sortOrder.order || \"ASC\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_ReviewQuestion_Select",
+              "name": "ReviewQuestion_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "ReviewQuestion_table.sortOrder.order || \"ASC\"",
+                "ReviewQuestion_table.sortOrder.column || 'questionID'"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_ReviewStatusType_Select",
+              "name": "ReviewStatusType_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "RevStatus_table.sortOrder.column || 'reviewStatusID'",
+                "RevStatus_table.sortOrder.order || \"ASC\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_ReviewType_Select",
+              "name": "ReviewType_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "reviewType_table.sortOrder.order || \"ASC\"",
+                "reviewType_table.sortOrder.column || 'requiredReviewID'"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "AdminPage_PrequalReview_Select_Applicant",
+              "name": "PrequalReview_Select_Applicant",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_PrequalReview_Select_Review_St",
+              "name": "PrequalReview_Select_Review_St",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_PrequalReview_Select_Review_Ty",
+              "name": "PrequalReview_Select_Review_Ty",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_PrequalReview_Select_UserName",
+              "name": "PrequalReview_Select_UserName",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_getAppType",
+              "name": "getAppType",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_getDataType",
+              "name": "getDataType",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_getPreQualReviewTypes",
+              "name": "getPreQualReviewTypes",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AdminPage_getReviewType",
+              "name": "getReviewType",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "AdminPage",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65bd14d46a813f5d1501a3bc_65bd14d46a813f5d1501a3da"
+}

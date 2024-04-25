@@ -1,0 +1,11 @@
+UPDATE ReviewQuestions SET
+		apptype = '{{updateReviewQuestion_form.fieldState.apptype.isVisible ? updateReviewQuestion_form.formData.apptype : updateReviewQuestion_form.sourceData.apptype}}',
+		reviewType = '{{updateReviewQuestion_form.fieldState.reviewType.isVisible ? updateReviewQuestion_form.formData.reviewType : updateReviewQuestion_form.sourceData.reviewType}}',
+    question = '{{updateReviewQuestion_form.fieldState.question.isVisible ? updateReviewQuestion_form.formData.question : updateReviewQuestion_form.sourceData.question}}',
+		tip = '{{updateReviewQuestion_form.fieldState.tip.isVisible ? updateReviewQuestion_form.formData.tip : updateReviewQuestion_form.sourceData.tip}}',
+		notes = '{{updateReviewQuestion_form.fieldState.notes.isVisible ? updateReviewQuestion_form.formData.notes : updateReviewQuestion_form.sourceData.notes}}',
+		whereFound = '{{updateReviewQuestion_form.fieldState.whereFound.isVisible ? updateReviewQuestion_form.formData.whereFound : updateReviewQuestion_form.sourceData.whereFound}}',
+		datatype = '{{updateReviewQuestion_form.fieldState.datatype.isVisible ? updateReviewQuestion_form.formData.datatype : updateReviewQuestion_form.sourceData.datatype}}',
+		active = '{{updateReviewQuestion_form.fieldState.active.isVisible ? updateReviewQuestion_form.formData.active : updateReviewQuestion_form.sourceData.active}}',
+		lastChangedBy = '{{get_user.data.email}}'
+  WHERE questionID = {{ReviewQuestion_table.selectedRow.questionID}};

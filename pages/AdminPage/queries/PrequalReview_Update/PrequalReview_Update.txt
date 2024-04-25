@@ -1,0 +1,8 @@
+UPDATE preQualReviews SET
+		applicantID = '{{PrequalRev_table.updatedRow.applicantID}}',
+		assignedTo = '{{PrequalRev_table.updatedRow.assignedTo}}',
+    reviewType = '{{PrequalRev_table.updatedRow.reviewType}}',
+		reviewStatus = '{{PrequalRev_table.updatedRow.reviewStatus}}',
+		reviewNotes = '{{PrequalRev_table.updatedRow.reviewNotes}}',
+		lastChangedBy = '{{get_user.data.email}}'
+WHERE reviewID = {{PrequalRev_table.updatedRow.reviewID}};

@@ -1,0 +1,2 @@
+SELECT ReviewStatusTypes.reviewStatusID, ReviewStatusTypes.reviewStatusType
+FROM ReviewStatusTypes;

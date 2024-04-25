@@ -1,0 +1,5 @@
+SELECT Applicant.applicantID, Applicant.ApplicantName
+FROM Applicant
+GROUP BY Applicant.applicantID, Applicant.ApplicantName
+ORDER BY Applicant.ApplicantName;
+

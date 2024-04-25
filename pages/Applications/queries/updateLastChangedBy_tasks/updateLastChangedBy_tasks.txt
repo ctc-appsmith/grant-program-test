@@ -1,0 +1,5 @@
+UPDATE preQualReviewAnswers
+
+SET lastChangedBy = '{{get_user.data.email}}'
+
+WHERE reviewID = {{appsmith.store.reviewID}}

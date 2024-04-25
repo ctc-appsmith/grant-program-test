@@ -1,0 +1,4 @@
+SELECT ReviewTypes.requiredReviewID, ReviewTypes.reviewType, ReviewTypes.appType
+FROM ReviewTypes
+WHERE apptype = {{data_table.selectedRow.type}}
+;

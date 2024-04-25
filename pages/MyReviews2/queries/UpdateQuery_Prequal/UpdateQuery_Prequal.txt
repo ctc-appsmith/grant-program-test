@@ -1,0 +1,9 @@
+UPDATE preQualReviewAnswers SET
+		answer = '{{Table3.updatedRow.answer}}',
+
+		issues = '{{Table3.updatedRow.answer}}',
+
+		notes = '{{Table3.updatedRow.notes}}',
+
+		lastChangedBy = '{{get_user.data.email}}'
+WHERE answerID = {{Table3.updatedRow.answerID}};

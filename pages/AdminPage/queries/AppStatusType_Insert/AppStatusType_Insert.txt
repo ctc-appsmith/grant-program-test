@@ -1,0 +1,12 @@
+INSERT INTO applicationStatusTypes (
+	appStatusType,
+	definition,
+	created,
+	lastUpdated,
+	lastUpdatedBy)
+VALUES (
+	'{{insertRevStatus_form.formData.reviewStatusType}}',
+	'{{insertRevStatus_form.formData.Definition}}',
+	'{{insertRevStatus_form.formData.created}}',
+	'{{insertRevStatus_form.formData.lastUpdated}}',
+	'{{get_user.data.email}}');

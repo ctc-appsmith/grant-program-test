@@ -1,0 +1,2 @@
+DELETE FROM ReviewStatusTypes
+  WHERE reviewStatusID = {{RevStatus_table.triggeredRow.reviewStatusID}};

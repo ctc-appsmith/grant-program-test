@@ -1,0 +1,13 @@
+INSERT INTO Applications (
+	applicationName,
+	clientID,
+	applicantID,
+	type,
+  lastchangedBy)
+VALUES (
+	{{insert_form.formData.applicationName}},
+	{{getClients.data[0].clientID}},
+	{{insert_form.formData.applicantID}},
+	{{insert_form.formData.type}},
+	{{get_user.data.email}}
+	);

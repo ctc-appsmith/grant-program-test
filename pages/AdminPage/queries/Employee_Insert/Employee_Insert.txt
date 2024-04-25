@@ -1,0 +1,12 @@
+INSERT INTO Employees (
+	empFirstName,
+	empLastName,
+	empEmail,
+	userName,
+	lastChangedBy)
+VALUES (
+	'{{insertEmp_form.formData.empFirstName}}',
+	'{{insertEmp_form.formData.empLastName}}',
+	'{{insertEmp_form.formData.empEmail}}',
+	'{{insertEmp_form.formData.userName}}',
+	'{{get_user.data.email}}');

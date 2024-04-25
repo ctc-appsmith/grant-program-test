@@ -1,0 +1,5 @@
+SELECT ReviewQuestions.question, ReviewQuestions.tip, ReviewAnswers.answer, ReviewAnswers.Issues, ReviewAnswers.notes, 
+ReviewAnswers.answerID
+FROM ReviewAnswers INNER JOIN ReviewQuestions ON ReviewAnswers.questionID = ReviewQuestions.questionID
+WHERE ReviewAnswers.appID = {{data_table.selectedRow.appID}}
+;

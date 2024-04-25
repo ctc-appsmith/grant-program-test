@@ -1,0 +1,7 @@
+UPDATE appDetails
+
+SET {{appsmith.store.query}}
+
+WHERE appDetailsID = {{appsmith.store.appDetailsID}}
+
+;

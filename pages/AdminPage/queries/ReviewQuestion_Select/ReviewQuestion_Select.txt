@@ -1,0 +1,6 @@
+SELECT ReviewQuestions.questionID, ReviewQuestions.question, ReviewTypes.reviewType, ReviewQuestions.apptype, ReviewQuestions.tip, ReviewQuestions.notes, ReviewQuestions.whereFound, ReviewQuestions.datatype, ReviewQuestions.active
+FROM ReviewTypes INNER JOIN ReviewQuestions ON ReviewTypes.requiredReviewID = ReviewQuestions.reviewType
+
+
+ORDER BY {{ReviewQuestion_table.sortOrder.column || 'questionID'}} {{ReviewQuestion_table.sortOrder.order || "ASC"}}
+;

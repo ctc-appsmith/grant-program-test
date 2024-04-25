@@ -1,0 +1,6 @@
+UPDATE preQualReviewTypes SET
+		appType = '{{updatePreQRevType_form.fieldState.appType.isVisible ? updatePreQRevType_form.formData.appType : updatePreQRevType_form.sourceData.appType}}',
+		reviewType = '{{updatePreQRevType_form.fieldState.reviewType.isVisible ? updatePreQRevType_form.formData.reviewType : updatePreQRevType_form.sourceData.reviewType}}',
+    notes = '{{updatePreQRevType_form.fieldState.notes.isVisible ? updatePreQRevType_form.formData.notes : updatePreQRevType_form.sourceData.notes}}',
+		lastChangedBy = '{{get_user.data.email}}'
+WHERE requiredReviewID = {{PreQreviewType_table.selectedRow.requiredReviewID}};

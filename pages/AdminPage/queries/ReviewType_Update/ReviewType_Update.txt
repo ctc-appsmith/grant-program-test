@@ -1,0 +1,6 @@
+UPDATE ReviewTypes SET
+		appType = '{{updateRevType_form.fieldState.appType.isVisible ? updateRevType_form.formData.appType : updateRevType_form.sourceData.appType}}',
+		reviewType = '{{updateRevType_form.fieldState.reviewType.isVisible ? updateRevType_form.formData.reviewType : updateRevType_form.sourceData.reviewType}}',
+    notes = '{{updateRevType_form.fieldState.notes.isVisible ? updateRevType_form.formData.notes : updateRevType_form.sourceData.notes}}',
+		lastChangedBy = '{{get_user.data.email}}'
+WHERE requiredReviewID = {{reviewType_table.selectedRow.requiredReviewID}};

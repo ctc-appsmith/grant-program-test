@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "copyFolderLink",
+    "pageId": "MyReviews2",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "MyReviews2_copyFolderLink",
+  "deleted": false,
+  "gitSyncId": "65fb23a816a31d53cf0d0515_660445bb16a31d53cf0d352f"
+}

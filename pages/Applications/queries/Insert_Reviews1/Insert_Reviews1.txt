@@ -1,0 +1,11 @@
+INSERT INTO Reviews (appID, assignedTo, reviewType, reviewStatus, reviewNotes, lastChangedBy) 
+VALUES (
+	{{data_table.selectedRow.appID}},
+	'{{(InsertReview_form.formData || {}).assignedTo}}',
+	'{{(InsertReview_form.formData || {}).reviewType}}',
+	'{{(InsertReview_form.formData || {}).reviewStatus}}',
+	'{{(InsertReview_form.formData || {}).reviewNotes}}',
+	'{{get_user.data.email}}'
+
+)
+;

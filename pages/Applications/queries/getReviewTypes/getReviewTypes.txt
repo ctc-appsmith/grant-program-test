@@ -1,0 +1,3 @@
+SELECT reviewType FROM ReviewTypes
+Where appType = {{data_table.selectedRow.type}}
+

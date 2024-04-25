@@ -1,0 +1,6 @@
+SELECT Applicant.ApplicantName, preQualReviews.assignedTo, preQualReviewTypes.reviewType, preQualReviews.reviewStatus, Applicant.applicantID, preQualReviews.reviewID, preQualReviews.reviewType AS typeID, Applicant.folderLink
+FROM preQualReviewTypes INNER JOIN (Applicant INNER JOIN preQualReviews ON Applicant.applicantID = preQualReviews.applicantID) ON preQualReviewTypes.requiredReviewID = preQualReviews.reviewType
+WHERE (((preQualReviews.reviewStatus)<>"Complete"))
+ORDER BY Applicant.ApplicantName;
+
+

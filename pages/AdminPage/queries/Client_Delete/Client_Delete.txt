@@ -1,0 +1,2 @@
+DELETE FROM Clients
+  WHERE clientID = {{data_table.triggeredRow.clientID}};

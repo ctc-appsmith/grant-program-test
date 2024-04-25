@@ -1,0 +1,7 @@
+INSERT INTO ReviewAnswers ( appID, reviewID, questionID )
+SELECT {{data_table.selectedRow.appID}} AS appID, {{lastReviewID.data[0].reviewID}} AS reviewID, ReviewQuestions.questionID
+
+
+FROM ReviewQuestions INNER JOIN Reviews ON Reviews.reviewType = ReviewQuestions.reviewType
+
+WHERE reviewID = {{lastReviewID.data[0].reviewID}};

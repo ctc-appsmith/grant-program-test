@@ -1,0 +1,4 @@
+SELECT reviewID FROM Reviews
+	WHERE reviewID = (
+		SELECT MAX(reviewID) FROM Reviews)
+;

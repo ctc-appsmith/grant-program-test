@@ -1,0 +1,5 @@
+SELECT type FROM Applications
+
+	WHERE appID = (
+		SELECT MAX(appID) FROM Applications)
+;

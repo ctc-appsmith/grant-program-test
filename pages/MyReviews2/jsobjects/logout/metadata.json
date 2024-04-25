@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "logout",
+    "pageId": "MyReviews2",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "MyReviews2_logout",
+  "deleted": false,
+  "gitSyncId": "654aaada7cc2433ce3db5200_65b2923fbd27da12bbc02743"
+}

@@ -1,0 +1,2 @@
+DELETE FROM ReviewTypes
+  WHERE requiredReviewID = {{reviewType_table.triggeredRow.requiredReviewID}};

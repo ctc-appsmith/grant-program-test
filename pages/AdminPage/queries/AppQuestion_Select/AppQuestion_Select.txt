@@ -1,0 +1,6 @@
+SELECT AppDetailItems.*, applicationTypes.appType AS type
+FROM applicationTypes INNER JOIN AppDetailItems ON applicationTypes.appTypeID = AppDetailItems.appType
+WHERE AppDetailItems.appType like '%{{appQuestion_table.searchText || ""}}%'
+ORDER BY {{appQuestion_table.sortOrder.column || 'AppDetailItemID'}} {{appQuestion_table.sortOrder.order || "ASC"}}
+;
+

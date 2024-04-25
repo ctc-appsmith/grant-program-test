@@ -1,0 +1,8 @@
+UPDATE ReviewAnswers SET
+		answer = '{{Table2.updatedRow.answer}}',
+
+
+		notes = '{{Table2.updatedRow.notes}}',
+
+		lastChangedBy = '{{get_user.data.email}}'
+WHERE answerID = {{Table2.updatedRow.answerID}};

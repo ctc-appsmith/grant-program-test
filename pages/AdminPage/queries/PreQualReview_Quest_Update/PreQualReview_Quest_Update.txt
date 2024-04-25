@@ -1,0 +1,7 @@
+UPDATE preQualReviewQuestions SET
+		reviewType = '{{updatePrequalRevQ_form.fieldState.reviewType.isVisible ? updatePrequalRevQ_form.formData.reviewType : updatePrequalRevQ_form.sourceData.reviewType}}',
+    question = '{{updatePrequalRevQ_form.fieldState.question.isVisible ? updatePrequalRevQ_form.formData.question : updatePrequalRevQ_form.sourceData.question}}',
+		tip = '{{updatePrequalRevQ_form.fieldState.tip.isVisible ? updatePrequalRevQ_form.formData.tip : updatePrequalRevQ_form.sourceData.tip}}',
+		notes = '{{updatePrequalRevQ_form.fieldState.notes.isVisible ? updatePrequalRevQ_form.formData.notes : updatePrequalRevQ_form.sourceData.notes}}',
+		lastChangedBy = '{{get_user.data.email}}'
+  WHERE questionID = {{PrequalRevQ_table.selectedRow.questionID}};

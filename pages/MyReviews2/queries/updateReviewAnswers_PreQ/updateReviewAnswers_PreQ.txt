@@ -1,0 +1,7 @@
+UPDATE preQualReviewAnswers
+
+SET {{appsmith.store.query}}
+
+WHERE answerID = {{appsmith.store.answerID}}
+
+;

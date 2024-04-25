@@ -1,0 +1,4 @@
+SELECT * FROM ReviewStatusTypes
+
+ORDER BY {{RevStatus_table.sortOrder.column || 'reviewStatusID'}} {{RevStatus_table.sortOrder.order || "ASC"}}
+;

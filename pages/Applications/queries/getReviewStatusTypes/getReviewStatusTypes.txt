@@ -1,0 +1,2 @@
+SELECT reviewStatusType FROM ReviewStatusTypes;
+

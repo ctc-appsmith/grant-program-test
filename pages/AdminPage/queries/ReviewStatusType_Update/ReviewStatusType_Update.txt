@@ -1,0 +1,7 @@
+UPDATE ReviewStatusTypes SET
+		reviewStatusType = '{{updateRevStatus_form.fieldState.reviewStatusType.isVisible ? updateRevStatus_form.formData.reviewStatusType : updateRevStatus_form.sourceData.reviewStatusType}}',
+			Definition = '{{updateRevStatus_form.fieldState.Definition.isVisible ? updateRevStatus_form.formData.Definition : updateRevStatus_form.sourceData.Definition}}',
+		created = '{{updateRevStatus_form.fieldState.created.isVisible ? updateRevStatus_form.formData.created : updateRevStatus_form.sourceData.created}}',
+    lastUpdated = '{{updateRevStatus_form.fieldState.lastUpdated.isVisible ? updateRevStatus_form.formData.lastUpdated : updateRevStatus_form.sourceData.lastUpdated}}',
+		lastUpdatedBy = '{{get_user.data.email}}'
+WHERE reviewStatusID = {{RevStatus_table.selectedRow.reviewStatusID}};

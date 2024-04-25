@@ -1,0 +1,2 @@
+SELECT preQualReviewTypes.reviewType, preQualReviewQuestions.questionID, preQualReviewQuestions.question, preQualReviewQuestions.tip, preQualReviewQuestions.notes, preQualReviewQuestions.dataType, preQualReviewQuestions.isActive
+FROM preQualReviewQuestions LEFT JOIN preQualReviewTypes ON preQualReviewQuestions.reviewType = preQualReviewTypes.requiredReviewID;

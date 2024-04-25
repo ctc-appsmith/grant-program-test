@@ -1,0 +1,6 @@
+SELECT applicationTypes.appType, applicationTypes.appTypeID
+FROM applicationTypes
+GROUP BY applicationTypes.appType
+ORDER BY applicationTypes.appType;
+
+

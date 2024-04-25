@@ -1,0 +1,14 @@
+INSERT INTO AppDetailItems (
+	appType,
+	appDetail,
+	notes,
+	lastChangedBy,
+	tip,
+	Category)
+VALUES (
+	'{{insertAppQuestion_form.formData.appType}}',
+	'{{insertAppQuestion_form.formData.appDetail}}',
+	'{{insertAppQuestion_form.formData.notes}}',
+	'{{get_user.data.email}}',
+	'{{insertAppQuestion_form.formData.tip}}',
+	'{{insertAppQuestion_form.formData.Category}}');

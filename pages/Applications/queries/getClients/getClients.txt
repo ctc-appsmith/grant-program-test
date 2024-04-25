@@ -1,0 +1,4 @@
+SELECT Clients.clientID, Clients.clientName
+FROM Clients
+GROUP BY Clients.clientID, Clients.clientName;
+

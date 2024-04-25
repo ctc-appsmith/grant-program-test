@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "logout",
+    "pageId": "Change Password",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Change Password_logout",
+  "deleted": false,
+  "gitSyncId": "654ba39d7cc2433ce3db53ae_654bb8b17cc2433ce3db56df"
+}

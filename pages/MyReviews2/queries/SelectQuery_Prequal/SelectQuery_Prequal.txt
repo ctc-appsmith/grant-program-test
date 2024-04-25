@@ -1,0 +1,4 @@
+SELECT preQualReviewQuestions.question, preQualReviews.assignedTo, preQualReviewQuestions.reviewType, preQualReviewAnswers.answer, preQualReviewAnswers.issues, preQualReviewAnswers.notes, preQualReviewAnswers.answerID, preQualReviews.reviewID
+FROM (preQualReviews INNER JOIN preQualReviewAnswers ON preQualReviews.reviewID = preQualReviewAnswers.reviewID) INNER JOIN preQualReviewQuestions ON preQualReviewAnswers.questionID = preQualReviewQuestions.questionID
+
+WHERE preQualReviewAnswers.reviewID = {{myPrequalReview_Table.selectedRow.reviewID}};

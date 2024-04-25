@@ -1,0 +1,7 @@
+SELECT PreQualQuestions.field, preQualAnswers.response, preQualAnswers.created, preQualAnswers.lastChanged, 
+
+preQualAnswers.lastChangedBy, preQualAnswers.preQualAnswerID, preQualAnswers.questionID, PreQualQuestions.section
+
+FROM preQualAnswers INNER JOIN PreQualQuestions ON preQualAnswers.questionID = PreQualQuestions.preQualQuestionID
+
+WHERE applicantID = {{myPrequalReview_Table.selectedRow.applicantID}} AND section = {{myPrequalReview_Table.selectedRow.typeID}};

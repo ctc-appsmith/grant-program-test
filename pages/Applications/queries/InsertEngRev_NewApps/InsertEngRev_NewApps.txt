@@ -1,0 +1,6 @@
+INSERT INTO Reviews ( appID, reviewType, reviewStatus, assignedTo )
+SELECT {{lastAppID.data[0].appID}}, ReviewTypes.requiredReviewID, "Pending", "Unassigned"
+FROM Applications INNER JOIN ReviewTypes ON Applications.type = ReviewTypes.appType
+WHERE (((Applications.appID)={{lastAppID.data[0].appID}}));
+
+

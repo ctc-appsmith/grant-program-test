@@ -1,0 +1,10 @@
+UPDATE AppDetailItems SET
+		appType = '{{updateAppQuestion_form.fieldState.appType.isVisible ? updateAppQuestion_form.formData.appType : updateAppQuestion_form.sourceData.appType}}',
+		appDetail = '{{updateAppQuestion_form.fieldState.appDetail.isVisible ? updateAppQuestion_form.formData.appDetail : updateAppQuestion_form.sourceData.appDetail}}',
+    notes = '{{updateAppQuestion_form.fieldState.notes.isVisible ? updateAppQuestion_form.formData.notes : updateAppQuestion_form.sourceData.notes}}',
+
+
+		lastChangedBy = '{{get_user.data.email}}',
+		tip = '{{updateAppQuestion_form.fieldState.tip.isVisible ? updateAppQuestion_form.formData.tip : updateAppQuestion_form.sourceData.tip}}',
+		Category = '{{updateAppQuestion_form.fieldState.Category.isVisible ? updateAppQuestion_form.formData.Category : updateAppQuestion_form.sourceData.Category}}'
+WHERE AppDetailItemID = {{appQuestion_table.selectedRow.AppDetailItemID}};

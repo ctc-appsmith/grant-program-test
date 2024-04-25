@@ -1,0 +1,6 @@
+SELECT ReviewTypes.requiredReviewID, applicationTypes.appType, ReviewTypes.reviewType, ReviewTypes.notes, ReviewTypes.lastChangedBy, ReviewTypes.appType AS appTypeID
+FROM ReviewTypes INNER JOIN applicationTypes ON ReviewTypes.appType = applicationTypes.appTypeID
+
+
+ORDER BY {{reviewType_table.sortOrder.column || 'requiredReviewID'}} {{reviewType_table.sortOrder.order || "ASC"}}
+;

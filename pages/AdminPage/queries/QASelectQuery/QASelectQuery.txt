@@ -1,0 +1,5 @@
+SELECT preQualReviewQuestions.question, preQualReviewQuestions.tip, preQualReviewAnswers.answer, preQualReviewAnswers.Issues, preQualReviewAnswers.notes, 
+preQualReviewAnswers.answerID
+FROM preQualReviewAnswers INNER JOIN preQualReviewQuestions ON preQualReviewAnswers.questionID = preQualReviewQuestions.questionID
+WHERE preQualReviewAnswers.applicantID = {{data_table.selectedRow.applicantID}}
+;

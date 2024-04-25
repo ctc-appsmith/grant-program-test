@@ -1,0 +1,7 @@
+UPDATE Reviews
+
+SET {{appsmith.store.query}}
+
+WHERE reviewID = {{appsmith.store.reviewID}}
+
+;

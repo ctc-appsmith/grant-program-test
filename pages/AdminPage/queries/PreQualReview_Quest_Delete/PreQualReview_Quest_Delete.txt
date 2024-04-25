@@ -1,0 +1,2 @@
+DELETE FROM ReviewQuestions
+  WHERE questionID = {{PrequalRevQ_table.triggeredRow.questionID}};

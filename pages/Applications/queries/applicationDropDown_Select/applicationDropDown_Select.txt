@@ -1,0 +1,4 @@
+SELECT Applications.appID, Applications.applicationName, Clients.clientName, Applicant.ApplicantName, Applications.type, Applications.created, Applications.lastChanged, Applications.lastChangedBy, Clients.clientID, Applications.applicantID
+FROM (Applications INNER JOIN Clients ON Applications.clientID = Clients.clientID) INNER JOIN Applicant ON 
+
+Applications.applicantID = Applicant.applicantID;

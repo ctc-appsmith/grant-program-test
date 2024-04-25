@@ -1,0 +1,2 @@
+DELETE FROM preQualReviewTypes
+  WHERE requiredReviewID = {{PreQreviewType_table.triggeredRow.requiredReviewID}};

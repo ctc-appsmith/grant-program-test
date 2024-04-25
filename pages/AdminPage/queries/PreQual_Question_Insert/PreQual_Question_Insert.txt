@@ -1,0 +1,10 @@
+INSERT INTO PreQualQuestions (
+	field,
+	notes,
+	lastChangedBy
+)
+VALUES (
+	'{{insertPrequalQ_form.formData.field}}',
+	'{{insertPrequalQ_form.formData.notes}}',
+	'{{get_user.data.email}}'
+);

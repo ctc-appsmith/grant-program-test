@@ -1,0 +1,11 @@
+INSERT INTO preQualReviewTypes (
+	appType,
+	reviewType,
+	notes,
+	lastChangedBy)
+VALUES (
+	'{{insertPreQRevType_form.formData.appType}}',
+	'{{insertPreQRevType_form.formData.reviewType}}',
+	'{{insertPreQRevType_form.formData.notes}}',
+	'{{get_user.data.email}}')
+	;

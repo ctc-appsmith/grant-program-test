@@ -1,0 +1,5 @@
+INSERT INTO appDetails ( AppDetailItemID, appID )
+SELECT AppDetailItems.AppDetailItemID, {{lastAppID.data[0].appID}} AS appID
+FROM AppDetailItems
+WHERE apptype = {{lastAppType.data[0].type}}
+;

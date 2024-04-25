@@ -1,0 +1,8 @@
+UPDATE Reviews SET
+		reviewType = '{{ReviewTable.updatedRow.reviewType}}',
+    assignedTo = '{{ReviewTable.updatedRow.assignedTo}}',
+		reviewStatus = '{{ReviewTable.updatedRow.reviewStatus}}',
+		reviewNotes = '{{ReviewTable.updatedRow.reviewNotes}}',
+
+		lastChangedBy = '{{get_user.data.email}}'
+WHERE reviewID = {{ReviewTable.updatedRow.reviewID}};

@@ -1,0 +1,132 @@
+{
+  "unpublishedPage": {
+    "name": "MyReviews2",
+    "slug": "myreviews2",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1174,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1550,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 87,
+          "minHeight": 890,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "MyReviews2_SelectQuery",
+              "name": "SelectQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "myReview_table.selectedRow.reviewID"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "MyReviews2_generalSelectQuery_Prequal",
+              "name": "generalSelectQuery_Prequal",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "myPrequalReview_Table.selectedRow.applicantID",
+                "myPrequalReview_Table.selectedRow.typeID"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "MyReviews2_getApplicants",
+              "name": "getApplicants",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "MyReviews2_getApps",
+              "name": "getApps",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "MyReviews2_SelectQuery_Prequal",
+              "name": "SelectQuery_Prequal",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "myPrequalReview_Table.selectedRow.reviewID"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "MyReviews2_generalSelectQuery",
+              "name": "generalSelectQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "myReview_table.selectedRow.appID"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "MyReviews2_getEmp",
+              "name": "getEmp",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "MyReviews2_getRevTypes",
+              "name": "getRevTypes",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "MyReviews2_getStatusTypes",
+              "name": "getStatusTypes",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "MyReviews2",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65bd14d46a813f5d1501a3bc_65bd14d46a813f5d1501a3f4"
+}

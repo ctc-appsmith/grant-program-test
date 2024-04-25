@@ -1,0 +1,18 @@
+INSERT INTO ReviewAnswers (
+	answer,
+	appID,
+	questionID,
+	Issues,
+	notes,
+	created,
+	lastChanged,
+	lastChangedBy)
+VALUES (
+	'{{insert_form.formData.answer}}',
+	'{{insert_form.formData.appID}}',
+	'{{insert_form.formData.questionID}}',
+	'{{insert_form.formData.Issues}}',
+	'{{insert_form.formData.notes}}',
+	'{{insert_form.formData.created}}',
+	'{{insert_form.formData.lastChanged}}',
+	'{{get_user.data.email}}');

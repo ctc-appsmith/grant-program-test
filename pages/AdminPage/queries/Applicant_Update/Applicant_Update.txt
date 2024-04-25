@@ -1,0 +1,15 @@
+UPDATE Applicant SET
+		ApplicantName = '{{update_form.fieldState.ApplicantName.isVisible ? update_form.formData.ApplicantName : update_form.sourceData.ApplicantName}}',	
+		applicantAddress = '{{update_form.fieldState.applicantAddress.isVisible ? update_form.formData.applicantAddress : update_form.sourceData.applicantAddress}}',
+		primaryFirstName = '{{update_form.fieldState.primaryFirstName.isVisible ? update_form.formData.primaryFirstName : update_form.sourceData.primaryFirstName}}',
+		primaryLastName = '{{update_form.fieldState.primaryLastName.isVisible ? update_form.formData.primaryLastName : update_form.sourceData.primaryLastName}}',
+		primaryTitle = '{{update_form.fieldState.primaryTitle.isVisible ? update_form.formData.primaryTitle : update_form.sourceData.primaryTitle}}',
+ 	primaryEmail = '{{update_form.fieldState.primaryEmail.isVisible ? update_form.formData.primaryEmail : update_form.sourceData.primaryEmail}}',
+		primaryPhone = '{{update_form.fieldState.primaryPhone.isVisible ? update_form.formData.primaryPhone : update_form.sourceData.primaryPhone}}',
+		aorFirstName = '{{update_form.fieldState.aorFirstName.isVisible ? update_form.formData.aorFirstName : update_form.sourceData.aorFirstName}}',
+		aorLastName = '{{update_form.fieldState.aorLastName.isVisible ? update_form.formData.aorLastName : update_form.sourceData.aorLastName}}',
+		aorTitle = '{{update_form.fieldState.aorTitle.isVisible ? update_form.formData.aorTitle : update_form.sourceData.aorTitle}}',
+		aorEmail = '{{update_form.fieldState.aorEmail.isVisible ? update_form.formData.aorEmail : update_form.sourceData.aorEmail}}',
+		aorPhone = '{{update_form.fieldState.aorPhone.isVisible ? update_form.formData.aorPhone : update_form.sourceData.aorPhone}}',
+		lastChangedBy = '{{get_user.data.email}}'
+WHERE applicantID = {{data_table.selectedRow.applicantID}};

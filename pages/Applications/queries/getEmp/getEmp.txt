@@ -1,0 +1,4 @@
+SELECT userName, empID 
+FROM Employees
+order by userName;
+

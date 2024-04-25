@@ -1,0 +1,2 @@
+DELETE FROM Reviews
+  WHERE reviewID = {{ReviewTable.triggeredRow.reviewID}};

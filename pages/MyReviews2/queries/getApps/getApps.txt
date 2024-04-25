@@ -1,0 +1,9 @@
+SELECT Applications.applicationName, Reviews.assignedTo, ReviewTypes.reviewType, Reviews.reviewStatus, Applicant.ApplicantName, Reviews.appID, Reviews.reviewID
+FROM ((Reviews INNER JOIN Applications ON Reviews.appID = Applications.appID) INNER JOIN Applicant ON Applications.applicantID = Applicant.applicantID) INNER JOIN ReviewTypes ON Reviews.reviewType = ReviewTypes.requiredReviewID
+WHERE (((Reviews.reviewStatus)<>"Complete"))
+ORDER BY Applications.applicationName;
+
+
+
+
+

@@ -1,0 +1,15 @@
+INSERT INTO preQualReviews (
+	applicantID,
+	assignedTo,
+	reviewType,
+	reviewStatus,
+	reviewNotes,
+	lastChangedBy)
+VALUES (
+	'{{insertPrequalRev_form.formData.applicantID}}',
+	'{{insertPrequalRev_form.formData.assignedTo}}',
+	'{{insertPrequalRev_form.formData.reviewType}}',
+	'{{insertPrequalRev_form.formData.reviewStatus}}',
+	'{{insertPrequalRev_form.formData.reviewNotes}}',
+	'{{get_user.data.email}}'
+);

@@ -1,0 +1,3 @@
+SELECT preQualReviewTypes.requiredReviewID, preQualReviewTypes.reviewType
+FROM preQualReviewTypes
+;

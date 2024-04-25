@@ -1,0 +1,5 @@
+UPDATE appDetails SET
+		detailInput = '{{generalTable1.updatedRow.detailInput}}',
+		lastChangedBy = '{{get_user.data.email}}'
+WHERE appDetailsID = {{generalTable1.updatedRow.appDetailsID}};
+

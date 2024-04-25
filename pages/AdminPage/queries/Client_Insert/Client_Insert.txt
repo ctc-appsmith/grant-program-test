@@ -1,0 +1,10 @@
+INSERT INTO Clients (
+	clientName,
+	contact,
+	contactEmail,
+	lastChangedBy)
+VALUES (
+	'{{insert_form.formData.clientName}}',
+	'{{insert_form.formData.contact}}',
+	'{{insert_form.formData.contactEmail}}',
+	'{{get_user.data.email}}');

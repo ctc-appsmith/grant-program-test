@@ -1,0 +1,6 @@
+SELECT PreQualQuestions.field, preQualAnswers.response, preQualAnswers.applicantID
+	FROM PreQualQuestions 
+		LEFT JOIN preQualAnswers ON PreQualQuestions.preQualQuestionID = preQualAnswers.questionID
+
+WHERE preQualAnswers.applicantID = {{data_table.selectedRow.applicantID}}
+;

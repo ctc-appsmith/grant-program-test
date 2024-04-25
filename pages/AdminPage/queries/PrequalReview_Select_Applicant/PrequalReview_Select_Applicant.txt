@@ -1,0 +1,3 @@
+SELECT Applicant.applicantID, Applicant.ApplicantName
+FROM Applicant
+;

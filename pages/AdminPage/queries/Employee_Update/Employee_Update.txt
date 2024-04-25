@@ -1,0 +1,9 @@
+UPDATE Employees SET
+		empFirstName = '{{updateEmp_form.fieldState.empFirstName.isVisible ? updateEmp_form.formData.empFirstName : update_form.sourceData.empFirstName}}',
+		empLastName = '{{updateEmp_form.fieldState.empLastName.isVisible ? updateEmp_form.formData.empLastName : update_form.sourceData.empLastName}}',
+    empEmail = '{{updateEmp_form.fieldState.empEmail.isVisible ? updateEmp_form.formData.empEmail : update_form.sourceData.empEmail}}',
+		userName = '{{updateEmp_form.fieldState.userName.isVisible ? updateEmp_form.formData.userName : update_form.sourceData.userName}}',
+		created = '{{updateEmp_form.fieldState.created.isVisible ? updateEmp_form.formData.created : update_form.sourceData.created}}',
+		lastChanged = '{{updateEmp_form.fieldState.lastChanged.isVisible ? updateEmp_form.formData.lastChanged : update_form.sourceData.lastChanged}}',
+		lastChangedBy = '{{get_user.data.email}}'
+WHERE empID = {{emp_table.selectedRow.empID}};

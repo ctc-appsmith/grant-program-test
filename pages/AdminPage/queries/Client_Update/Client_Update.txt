@@ -1,0 +1,8 @@
+UPDATE Clients SET
+		clientName = '{{update_form.fieldState.clientName.isVisible ? update_form.formData.clientName : update_form.sourceData.clientName}}',
+		contact = '{{update_form.fieldState.contact.isVisible ? update_form.formData.contact : update_form.sourceData.contact}}',
+    contactEmail = '{{update_form.fieldState.contactEmail.isVisible ? update_form.formData.contactEmail : update_form.sourceData.contactEmail}}',
+		lastChangedBy = '{{get_user.data.email}}'
+
+		
+WHERE clientID = {{data_table.selectedRow.clientID}};
