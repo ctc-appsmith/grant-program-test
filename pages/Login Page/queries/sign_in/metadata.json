@@ -32,7 +32,7 @@
           "value": "password"
         }
       ],
-      "body": "{\n\t\"email\": \"{{signin_email_input.text}}\",\n\t\"password\": \"{{signin_pw_input.text}}\"\n}",
+      "body": "{\n\t\"email\": \"{{signin_email_input.text}}\",\n\t\"password\": \"{{signin_pw_input.text}}\"\n}\n",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
